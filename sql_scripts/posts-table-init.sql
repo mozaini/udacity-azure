@@ -10,7 +10,7 @@ CREATE TABLE POSTS(
 	PRIMARY KEY (id),
 	FOREIGN KEY (user_id) REFERENCES users(id)
 );
-
+-- # 
 INSERT INTO dbo.posts (title, author, body, user_id)
 VALUES (
     'Lorem ipsum dolor sit amet',
