@@ -18,6 +18,41 @@ Based on the above descriptions of both Azure resources, I do not need an entire
 
 Therefore, I choose to deploy the Article CMS app on Azure App Service.
 
+Below is a Comparison between Azure App Service and  Azure Virtual Machine regarding cost, scalability, availability.
+- Pricing-wise, I have run a test using a pricing calculator provided by Microsoft. In the test, I used the same configuration settings I would use on Azure for one month, and I have come to this conclusion. If I opt for Azure App Service, it would cost me nothing. Contrary, with Azure VM, it would cost me up to $13, more or less. Hence, I decided to go for Azure App Service because it's the cheapest. 
+
+- Scalability-wise, with Azure App Service, I have the option to scale my app either 
+	* horizontally (Scale-Out), add more instances of the application that runs on the App
+	* vertically (Scale-up), increase memory and add more CPUs and disk space by simply changing 	the pricing tire. 
+	On the other hand, Azure VM provides features for scaling, including VM scale sets, 	a group of 	identical, load-balanced VMs, and Azure VMs batch, which enables large-scale parallel and high-	performance computing (HPC) batch jobs with the ability to scale to tens, hundreds, or thousands 	of VMs. Since my application is simple and doesn't require that scalability, I decided to chose Azure 	App Service 
+	
+- Availability-wise, in order to have a better overview, let me show the differences between App Service and VM in Azure in terms of monthly uptime percentage. Below are two tables that show the uptime percentage of Azure App Service and Azure VM, according to SLA for App Service.
+
+### Azure App Service 
+<table>
+    <thead>
+        <tr>
+            <th>Monthly Uptime Percentage</th>
+            <th>Service Credit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&lt; 99.95%</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>&lt; 99%</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>&lt; 95%</td>
+            <td>100%</td>
+        </tr>
+    </tbody>
+</table>
+
+
 ### Assess app changes that would change your decision.
 
 *Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
