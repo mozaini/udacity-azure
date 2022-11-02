@@ -26,7 +26,7 @@ Below is a Comparison between Azure App Service and  Azure Virtual Machine regar
 	* vertically (Scale-up), increase memory and add more CPUs and disk space by simply changing 	the pricing tire. 
 	On the other hand, Azure VM provides features for scaling, including VM scale sets, 	a group of 	identical, load-balanced VMs, and Azure VMs batch, which enables large-scale parallel and high-	performance computing (HPC) batch jobs with the ability to scale to tens, hundreds, or thousands 	of VMs. Since my application is simple and doesn't require that scalability, I decided to chose Azure 	App Service 
 	
-- Availability-wise, in order to have a better overview, let me show the differences between App Service and VM in Azure in terms of monthly uptime percentage. Below are two tables that show the uptime percentage of Azure App Service and Azure VM, according to SLA for App Service.
+- Availability-wise, in order to have a better overview, let me show the differences between App Service and VM in Azure in terms of monthly uptime percentage. Below are two tables that show the uptime percentage of Azure App Service and Azure VM, according to SLA for App Service and VM.
 
 ### Azure App Service 
 <table>
@@ -56,7 +56,6 @@ Monthly Uptime Percentage: The Monthly Uptime Percentage is calculated using the
 
 Monthly Uptime % = (Maximum Available Minutes-Downtime)/(Maximum Available Minutes) x 100
 
-The monthly uptime percentage to the Service Credit for Azure VM, according to SLA for Virtual Machines.
 
 ### Azure VM
 
