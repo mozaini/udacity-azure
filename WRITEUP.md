@@ -52,6 +52,41 @@ Below is a Comparison between Azure App Service and  Azure Virtual Machine regar
     </tbody>
 </table>
 
+Monthly Uptime Percentage: The Monthly Uptime Percentage is calculated using the following formula:
+
+Monthly Uptime % = (Maximum Available Minutes-Downtime)/(Maximum Available Minutes) x 100
+
+The monthly uptime percentage to the Service Credit for Azure VM, according to SLA for Virtual Machines.
+
+### Azure VM
+
+<table>
+  <thead>
+    <tr>
+      <th>Monthly Uptime Percentage</th>
+      <th>Service Credit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt; 99.99%</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>&lt; 99%</td>
+      <td>25%</td>
+    </tr>
+    <tr>
+      <td>&lt; 95%</td>
+      <td>100%</td>
+    </tr>
+  </tbody>
+</table>
+
+"Monthly Uptime Percentage" for Virtual Machines is calculated as Maximum Available Minutes less Downtime divided by Maximum Available Minutes in a billing month for a given Microsoft Azure subscription. Monthly Uptime Percentage is represented by the following formula:
+
+Monthly Uptime % = (Maximum Available Minutes-Downtime) / Maximum Available Minutes X 100
+
 
 ### Assess app changes that would change your decision.
 
